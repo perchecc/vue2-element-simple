@@ -1,0 +1,28 @@
+@import "./variable.scss";
+
+// element plus 组件补充样式
+@import "./element-ui.scss";
+
+// tailwindscss 样式
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+/* 为了使用 v-scale-screen,请将 body 样式设置为 overflow: hidden;*/
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+img {
+  @apply block object-cover;
+}
