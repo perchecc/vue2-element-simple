@@ -1,14 +1,12 @@
 {
-  "name": "farm_cms_vue",
+  "name": "vue2-element-simple",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve  --mode _local",
-    "serve:dev": "vue-cli-service serve  --mode dev",
-    "serve:beta": "vue-cli-service serve  --mode beta",
-    "build:dev": "vue-cli-service build --mode dev",
-    "build:beta": "vue-cli-service build  --mode beta",
-    "build:prod": "vue-cli-service build  --mode prod"
+    "serve:dev": "vue-cli-service serve  --mode development --watch",
+    "serve:prod": "vue-cli-service serve  --mode production --watch",
+    "build:dev": "set NODE_ENV=production&vue-cli-service build --mode development",
+    "build:prod": "set NODE_ENV=production&vue-cli-service build  --mode production"
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
